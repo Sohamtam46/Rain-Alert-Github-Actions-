@@ -1,7 +1,6 @@
 import os
 import smtplib
 import requests
-from twilio.rest import Client
 
 MY_EMAIL = os.environ.get("MY_EMAIL")
 TO_EMAIL = os.environ.get("TO_EMAIL")
