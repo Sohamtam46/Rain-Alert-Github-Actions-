@@ -3,11 +3,11 @@ import smtplib
 import requests
 
 MY_EMAIL = os.environ.get("MY_EMAIL")
-TO_EMAIL = os.environ.get("TO_EMAIL")
+TO_EMAIL = os.environ.get("TO_EMAIL","").split(",")
 MY_PASSWORD = os.environ.get("MY_PASSWORD")
 
 def send_email(message):
-    with smtplib.SMTP("smtp.gmail.com") as connection:
+    with smtplib.SMTP("smtp.gmail.com",587) as connection:
         connection.starttls()
         connection.login(user=MY_EMAIL, password=MY_PASSWORD)
         connection.sendmail(
