@@ -1,4 +1,4 @@
-# Rain Alert GitHub Actions
+# Rain Alert Using GitHub Actions
 
 This repository contains a GitHub Actions workflow to alert users when rain is forecasted in their area. This can be useful for anyone wanting to stay informed about weather changes and plan their activities accordingly.
 
